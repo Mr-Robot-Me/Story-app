@@ -1,7 +1,6 @@
 class StoriesController < ApplicationController
-	before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_story, only: [:show, :edit, :update, :destroy]
-  before_action :find_story, only: [:show, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   def index
@@ -44,10 +43,6 @@ class StoriesController < ApplicationController
 
   def set_story
   	@story = Story.find(params[:id])
-  end
-
-  def find_story
-    @story = Story.find(params[:id])
   end
 
   def correct_user
