@@ -1,0 +1,14 @@
+<h1 class="center-text">User show</h1><br>
+
+<div id="users">
+	<h3><%= @user.firstname %> <%= @user.lastname %></h3>
+</div>
+
+<div id="stories">
+	<% @stories.each do | story | %>
+		<p><%= story.title %></p>
+		<p><%= story.content %></p>
+		<p><%= story.user.firstname if story.user %></p>
+	<% end %>
+</div>
+

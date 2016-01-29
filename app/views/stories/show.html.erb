@@ -1,0 +1,8 @@
+<h1 class="center-text">Stories</h1>
+<hr class="divider">
+<div id="center-text">
+	<h2><strong><%= @story.title %></strong></h2>
+	<p><strong><%= @story.content %></strong></p>
+	<p><%= link_to @story.user.firstname, user_stories_path(@story.user.firstname) %></p>
+	<hr class="divider">
+</div>

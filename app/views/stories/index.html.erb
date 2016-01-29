@@ -1,0 +1,14 @@
+<h1 class="center-text">Stories</h1>
+
+<hr class="divider">
+
+<div id="stories">
+	<% @stories.each do |story| %>
+		<h5><strong><%= link_to story.title, story %></strong></h5>
+		<p><%= truncate(story.content, length: 42) %></p>
+		<p><%= link_to story.user.firstname, user_stories_path(story.user.firstname) %></p>
+
+		<hr class="divider">
+	<% end %>
+</div>
+
