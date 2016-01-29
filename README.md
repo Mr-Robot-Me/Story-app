@@ -18,9 +18,11 @@ Create posts
 
 Deploy to Heroku
 
+*remmember to $ RAIL_ENV=production rake assets:precompile *
+
 If you run into any issues Google around.
 
-[Learn dynamic web development](www.youmix.me)
+[Learn dynamic web development](http://www.youmix.me)
 
 Developer [Michael Devenport](https://twitter.com/WEBrip) ;-)
 
